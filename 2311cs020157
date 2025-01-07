@@ -1,0 +1,335 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "0dd35359-9c7e-4481-8e98-cf0dea56871b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{0, 1, 8, 9, 10}\n",
+      "<class 'set'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "s1= {1,8,9,0,10,9,0,1,9}\n",
+    "print(s1)\n",
+    "print(type(s1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "e8e663c8-0f81-4dfe-b34c-1392a384a6d9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "lst1 = [1,8,9,0,10,20,78,8,8,8]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "2e624177-8a01-47bf-871d-7fa8da246813",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{0, 1, 8, 9, 10, 78, 20}\n",
+      "<class 'set'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "s2= set (lst1)\n",
+    "print(s2)\n",
+    "print(type(s2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "fd051b78-9b0b-4eda-a1a0-96bdf302c109",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['__and__',\n",
+       " '__class__',\n",
+       " '__class_getitem__',\n",
+       " '__contains__',\n",
+       " '__delattr__',\n",
+       " '__dir__',\n",
+       " '__doc__',\n",
+       " '__eq__',\n",
+       " '__format__',\n",
+       " '__ge__',\n",
+       " '__getattribute__',\n",
+       " '__getstate__',\n",
+       " '__gt__',\n",
+       " '__hash__',\n",
+       " '__iand__',\n",
+       " '__init__',\n",
+       " '__init_subclass__',\n",
+       " '__ior__',\n",
+       " '__isub__',\n",
+       " '__iter__',\n",
+       " '__ixor__',\n",
+       " '__le__',\n",
+       " '__len__',\n",
+       " '__lt__',\n",
+       " '__ne__',\n",
+       " '__new__',\n",
+       " '__or__',\n",
+       " '__rand__',\n",
+       " '__reduce__',\n",
+       " '__reduce_ex__',\n",
+       " '__repr__',\n",
+       " '__ror__',\n",
+       " '__rsub__',\n",
+       " '__rxor__',\n",
+       " '__setattr__',\n",
+       " '__sizeof__',\n",
+       " '__str__',\n",
+       " '__sub__',\n",
+       " '__subclasshook__',\n",
+       " '__xor__',\n",
+       " 'add',\n",
+       " 'clear',\n",
+       " 'copy',\n",
+       " 'difference',\n",
+       " 'difference_update',\n",
+       " 'discard',\n",
+       " 'intersection',\n",
+       " 'intersection_update',\n",
+       " 'isdisjoint',\n",
+       " 'issubset',\n",
+       " 'issuperset',\n",
+       " 'pop',\n",
+       " 'remove',\n",
+       " 'symmetric_difference',\n",
+       " 'symmetric_difference_update',\n",
+       " 'union',\n",
+       " 'update']"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "dir(set)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "b703a069-d3d7-43ed-9c0f-55bbd845c34d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{0, 1, 8, 9, 10, 20, 78}"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s1|s2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "32265987-a4ff-4eb8-856c-36a4416fd7a7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{0, 1, 8, 9, 10}"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s1&s2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "92e4dd49-b5a0-494d-afe9-03252f823ea3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "s1={2,3,5,6,7}\n",
+    "s2={5,6,7}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "7d4f2ebd-9858-4fca-8fc4-794a979d3cca",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "set()"
+      ]
+     },
+     "execution_count": 26,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s1-s2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "a3923f99-65b8-4323-9cd2-7e3b9879268c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "welcome to aiml classs\n",
+      "we started with python\n",
+      "This is an awesome class\n"
+     ]
+    }
+   ],
+   "source": [
+    "str1=\"welcome to aiml classs\"\n",
+    "print(str1)\n",
+    "str2='we started with python'\n",
+    "print(str2)\n",
+    "str3='''This is an awesome class'''\n",
+    "print(str3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "8e57cd35-4889-4d5d-8589-1ada94f85b1c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'str'>\n",
+      "<class 'str'>\n",
+      "<class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(str1))\n",
+    "print(type(str2))\n",
+    "print(type(str3))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "118a6f16-576e-454b-a30d-ca817b0e02d3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "welcome to aiml classs\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "'me to'"
+      ]
+     },
+     "execution_count": 36,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "print(str1)\n",
+    "str1[5:10]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "ba8c8bdb-312e-47f4-9315-0d6129723c98",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'The products is awesome; Great Services'"
+      ]
+     },
+     "execution_count": 40,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "reviews =[\"The products is awesome\",\"Great Services\"]\n",
+    "joined_string ='; '.join(reviews)\n",
+    "joined_string"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "23aa8f20-6340-4d3a-b581-d2e863d94043",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
